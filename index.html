@@ -500,24 +500,42 @@
           Leave your contacts and we will call you back
         </p>
 
-        <form action="">
-          <ul class="modal-list">
+        <form class="modal-form">
+          <ul class="modal-list list">
             <li class="modal-item">
               <label for="name" class="modal-label">Name</label>
-              <input type="text" id="name" class="modal-input" placeholder=""></li>
+              <div>
+                <input name="Name" type="text" id="name" class="modal-input" placeholder="">
+                <svg class="modal-form-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+            </li>
             <li class="modal-item">
               <label for="phone" class="modal-label">Phone</label>
-              <input type="tel" id="phone" class="modal-input" placeholder=""></li>
+              <div>
+                <input name="Phone" type="tel" id="phone" class="modal-input" placeholder="">
+                <svg class="modal-form-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+            </li>
             <li class="modal-item">
               <label for="email" class="modal-label">Email</label>
-              <input type="email" id="email" class="modal-input" placeholder=""></li>
+              <div>
+                <input name="Email" type="email" id="email" class="modal-input" placeholder="">
+                <svg class="modal-form-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+            </li>
           </ul>
           <label for="comment" class="modal-label">Comment</label>
-          <input type="" id="comment" class="modal-input" placeholder="Text input">
-          <input type="checkbox" id="checkbox" class="modal-input-checkbox">
-          <label for="checkbox"></label>
+          <textarea name="Comment" id="comment" class="modal-textarea" cols="30" rows="10" placeholder="Text input"></textarea>
+          <input type="checkbox" id="checkbox" class="modal-checkbox">
+          <label for="checkbox" class="modal-label"> <span>I accept the terms and conditions of the</span> <a href="#" class="modal-label-link">Privacy Policy</a></label>
 
-          <button type="submit"></button>
+          <button type="submit" class="modal-button hero-btn">Send</button>
         </form>
 
       </div>

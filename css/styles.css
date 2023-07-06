@@ -811,6 +811,12 @@ letter-spacing: 0.48px;
 .footer-label {
   color: #FFF;
   margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  
+
+
 }
 
 .footer-input {

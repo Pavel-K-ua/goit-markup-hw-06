@@ -659,14 +659,18 @@ address {
   flex-direction: column;
 
 }
-.modal-list {
+/* .modal-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 8px;
-}
+} */
+
 .modal-item {
+  margin-bottom: 8px;
+
 }
+
 .modal-label {
   display: block;
   margin-bottom: 4px;

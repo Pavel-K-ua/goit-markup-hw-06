@@ -487,7 +487,7 @@
             <label for="footer-input" class="footer-input-label">
               <input
                 type="email"
-                name="Subscribe"
+                name="subscribe"
                 id="footer-input"
                 class="footer-input"
                 placeholder="E-mail"
@@ -524,17 +524,17 @@
 
         <form class="modal-form">
               <div class="modal-item">
-                <label for="name" class="modal-label">Name</label>
+                <label for="user-name" class="modal-label">Name</label>
                 <div class="modal-form-field">
                   <input
-                    name="Name"
+                    name="user-name"
                     type="text"
-                    id="name"
+                    id="user-name"
                     class="modal-input"
                     placeholder=""
                     required
                   />
-                  <svg class="modal-form-icon" width="18" height="18">
+                  <svg class="modal-form-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-modal-user"></use>
                   </svg>
                 </div>
@@ -550,7 +550,7 @@
                     placeholder=""
                     required
                   />
-                  <svg class="modal-form-icon" width="18" height="18">
+                  <svg class="modal-form-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-modal-phone"></use>
                   </svg>
                 </div>
@@ -566,42 +566,43 @@
                     placeholder=""
                     required
                   />
-                  <svg class="modal-form-icon" width="18" height="18">
+                  <svg class="modal-form-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-modal-email"></use>
                   </svg>
                 </div>
               </div>
-          <label for="comment" class="modal-label">Comment</label>
-          <textarea
-            name="Comment"
-            id="comment"
-            class="modal-textarea"
-            cols="30"
-            rows="10"
-            placeholder="Text input"
-          ></textarea>
-          <!-- <label for="checkbox" class="modal-label checkbox-label"> <span>I accept the terms and conditions of the</span> <a href="#" class="modal-label-link">Privacy Policy</a></label> -->
-          <label class="modal-agreement">
+              <div class="modal-item">
+                <label for="comment" class="modal-label">Comment</label>
+                <textarea
+                  name="Comment"
+                  id="comment"
+                  class="modal-textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+          <div class="modal-agreement">
             <input
               class="modal-agreement-checkbox visually-hidden"
               type="checkbox"
-              name="user-agreement"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
-            <svg class="modal-custom-checkbox" width="16" height="16">
-              <use
-                class="unchecked"
-                href="./images/icons.svg#icon-uncheckbox"
-              ></use>
-              <use
-                class="checked"
-                href="./images/icons.svg#icon-checkbox"
-              ></use>
-            </svg>
-            <span class="modal-agreement-desc"
-              >I accept the terms and conditions of the
+            <label class="modal-agreement-desc">
+              <span class="checkbox-wrapper">
+                <svg class="modal-custom-checkbox" width="8" height="10">
+                  <use
+                  class="checkbox"
+                  href="./images/icons.svg#icon-checkbox8x10"
+                  ></use> 
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="modal-agreement-link" href="#">Privacy Policy</a>
-            </span>
-          </label>
+            </label>
+          </div>
           <button type="submit" class="modal-button hero-btn">Send</button>
         </form>
       </div>

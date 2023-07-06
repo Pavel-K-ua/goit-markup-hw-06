@@ -668,7 +668,10 @@ address {
 
 .modal-item {
   margin-bottom: 8px;
+}
 
+.modal-item-textarea {
+  margin-bottom: 16px;
 }
 
 .modal-label {
@@ -729,10 +732,15 @@ address {
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
-  outline: none;
+  outline: transparent; 
   background-color: transparent;
   margin-bottom: 16px;
-  resize:none
+  resize:none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -779,6 +787,13 @@ letter-spacing: 0.48px;
   letter-spacing: 0.04em;
   user-select: none;
 }
+
+.modal-agreement-link {
+  color: var(--iris)
+}
+
+/* FOTER */
+
 
 .footer-wrapper,
 .foter-input-wrapper,

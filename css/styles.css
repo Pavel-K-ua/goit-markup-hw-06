@@ -814,7 +814,7 @@ letter-spacing: 0.48px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
+
 
 
 }
@@ -829,6 +829,10 @@ letter-spacing: 0.48px;
   border-radius: 4px;
   border: 1px solid var(--white, #FFF);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
 }
 
@@ -837,13 +841,15 @@ letter-spacing: 0.48px;
 }
 
 .footer-btn {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 24px;
-  gap: 16px;
 }
 
 .footer-plane {
   fill: currentColor;
+  margin-left: 16px
 }

@@ -140,7 +140,9 @@ address {
   color: var(--ocean);
 }
 
-.nav-link::after {
+.nav-link::after,
+.studio-link::after,
+.portfolio-link::after {
   display: block;
   content: "";
   position: absolute;
@@ -153,7 +155,9 @@ address {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.studio-link::after,
+.portfolio-link::after {
   opacity: 1;
 }
 
